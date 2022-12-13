@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <title>Document</title>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <form>
+    <h1>Калькулятор чаевых</h1>
+
+    <div class="inputs">
+      <div class="field_sum">
+        <span class="text_sum">Сумма по счету</span>
+        <div class="sum_number">
+          <label>
+            <input type="number" class="sumByCheck">
+          </label>
+        </div>
+      </div>
+
+        <div class="field_quality">
+          <span class="text_quality">Качество обслуживания</span>
+        <label>
+          <select id="options" class="list">
+            <option value="15"><span class="option_text">Отличное (15%)</span></option>
+            <option value="10"><span class="option_text">Хорошее (10%)</span></option>
+            <option value="5"><span class="option_text">Нормальное (5%)</span></option>
+            <option value="0"><span class="option_text">Плохое (0%)</span></option>
+          </select>
+        </label>
+        </div>
+
+      <div class="field_people_number">
+          <span class="text_persons">Количество человек</span>
+          <div class="people_number">
+        <label>
+          <input type="number" class="peopleNumber">
+        </label>
+      </div>
+      </div>
+    </div>
+
+    <div class="buttons">
+      <button class="calculate"><span class="text_calculate">Посчитать</span></button>
+      <button class="delete"><span class="text_delete">Сбросить</span></button>
+    </div>
+
+    <div class="results">
+      <div class="summary_text">
+        <div class="title"><span class="title_text">Чаевые:</span></div>
+        <div class="value"><span class="value_text value_tips"> </span></div>
+        <div class="description"><span class="description_text">(с каждого)</span></div>
+      </div>
+      <div class="summary_text">
+        <div class="title"><span class="title_text">Всего:</span></div>
+        <div class="value"><span class="value_text value_total"> </span></div>
+        <div class="description"><span class="description_text">(с каждого)</span></div>
+      </div>
+    </div>
+  </form>
+  <script src="script.js"></script>
+</body>
+
+</html>
